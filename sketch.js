@@ -40,9 +40,6 @@ function draw() {
 	dustbin3.display();
 	ground.display();
 
-	//calls the function
-	keyPressed();
-
 	//draws all the sprites
 	drawSprites();
 }
@@ -50,6 +47,6 @@ function draw() {
 function keyPressed() {
 	//bounces the paper
 	if (keyCode === UP_ARROW) {
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:1,y:-1});
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:23,y:-23});
 	}
 }
